@@ -13,8 +13,8 @@ function bonAppetit(bill, k, b) {
   return actual - b == 0 ? 'Bon Appetit' : b - actual;
 }
 
-var bill = [72, 53, 60, 66, 90, 62, 12, 31, 36, 94];
+var bill = [3, 10, 2, 9];
 console.log(bill.length);
-var k = 6;
-var b = 288;
+var k = 1;
+var b = 12;
 console.log(bonAppetit(bill, k, b));
