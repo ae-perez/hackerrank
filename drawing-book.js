@@ -17,10 +17,10 @@ function pageCount(n, p) {
     } else if (start + 2 == p) {
       turned++;
       n = p;
-    } else if (endStart-- == p) {
+    } else if (endStart % 2 == 0 && endStart-- == p) {
       turned++;
       n = p;
-    } else if (endStart - 2 == p) {
+    } else if (endStart % 2 == 0 && endStart - 2 == p) {
       turned++;
       n = p;
     }
