@@ -8,7 +8,7 @@ function getMoneySpent(keyboards, drives, b) {
   for (let i = 0; i < keyboards.length; i++) {
     for (let j = 0; j < drives.length; j++) {
       temp = drives[j] + keyboards[i];
-      if (drives[j] + keyboards[i]) {
+      if (drives[j] + keyboards[i] <= b) {
         max = Math.max(max, temp);
       }
     }
